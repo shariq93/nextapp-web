@@ -339,10 +339,10 @@ clip-path: polygon(0 0, 100% 0%, 78% 100%, 0 100%);
 .next-proces-box img{
     width: 100%;
     object-fit: contain;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .next-process-row .next-proces-box:first-child{
-    background: #fcb737;
+    background:#ea7330;
     color: white;
 }
 .next-process-row .next-proces-box:nth-child(2){

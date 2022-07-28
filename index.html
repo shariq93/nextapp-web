@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tilt.css">
 </head>
 
 <body>
@@ -107,7 +108,7 @@
                 <h5>Our work is the bridge to various insightful digital experiences.</h5>
             </div>
 
-            <div class="next-process-hero wow fadeInUp">
+            <div class="next-process-hero wow  js-tilt fadeInUp" data-tilt-axis="x" data-tilt-axis="y" data-tilt-glare="flase" data-tilt-perspective="1000" data-tilt-scale="1" data-tilt-speed="400" data-tilt-max="10">
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <h3>
@@ -335,6 +336,43 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/tilt.jquery.js"></script>
+    
+    <script src="assets/js/tilt.jquery.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script>
+        const tilt = $('.js-tilt').tilt();
+    
+        $('.js-destroy').on('click', function () {
+            const element = $(this).closest('.js-parent').find('.js-tilt');
+            element.tilt.destroy.call(element);
+        });
+    
+        $('.js-getvalue').on('click', function () {
+            const element = $(this).closest('.js-parent').find('.js-tilt');
+            const test = element.tilt.getValues.call(element);
+            console.log(test[0]);
+        });
+    
+        $('.js-reset').on('click', function () {
+            const element = $(this).closest('.js-parent').find('.js-tilt');
+            element.tilt.reset.call(element);
+        });
+    
+        /*tilt.on('change', function (e, transforms) {
+         console.log(transforms);
+         });
+    
+         tilt.on('tilt.mouseLeave', function (e) {
+         console.log(e);
+         });
+    
+         tilt.on('tilt.mouseEnter', function (e) {
+         console.log(e);
+         });*/
+    </script>
+
+  
 
 
 

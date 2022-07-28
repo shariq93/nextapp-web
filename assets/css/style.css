@@ -364,7 +364,10 @@ clip-path: polygon(0 0, 100% 0%, 78% 100%, 0 100%);
     margin-top: 20px;
 }
 .next-proces-box:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition:transform .3 ease-in-out;
+    -ms-transition:transform .3 5s ease-in-out;
 }
 .next-process-row .next-proces-box:first-child{
     background:#ea7330;

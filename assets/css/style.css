@@ -269,6 +269,23 @@ opacity: 0.7;
 .next-heading-snippet.color-white h5{
     color: white;
 }
+.next-heading-snippet.color-white h1{
+    color: white;
+}
+.next-heading-snippet.color-white h4{
+    color: white;
+}
+.next-heading-snippet h4{
+    font-size: 22px;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+.next-heading-snippet h1{
+    font-size: 40px;
+    line-height: 1.4em;
+    font-weight:400;
+}
+
 
 .next-process-hero{
     width: 100%;
@@ -488,4 +505,88 @@ border-top-right-radius: 100px;
 }
 .next-copy-right{
     margin-top: 80px;
+}
+
+.inner-banner{
+    width: 100%;
+    padding: 180px 0 80px 0;
+}
+.team-section{
+    width: 100%;
+    padding: 0px 0 80px 0;
+    position: relative;
+    z-index: 1;
+   
+}
+.steve{
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+}
+.team-section::before{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: '';
+    height: calc(100% - 120px);
+    background: #4764B9;
+    border-bottom-left-radius: 100px;
+}
+.full-team-img{
+    width: calc(100% - 120px);
+    margin-bottom: 80px;
+}
+.full-team-img img{
+    width:100%;
+}
+.next-people{
+    width: 100%;
+    padding: 80px 0;
+}
+.next-people-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+.next-people-title h3{
+    color: #221e41;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.next-people-title p{
+    font-size: 18px;
+    color: #757384;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+.next-people-box-holder{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 40px;
+margin-top: 80px;    
+}
+.next-people-box{
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+}
+.next-people-box img{
+    width: 160px;
+    max-width: 200px;
+    height: 210px;
+    border-radius: 40px;
+    object-fit: cover;
+    object-position:center ;
+    margin-bottom: 10px;
+}
+.next-people-box h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom:0px;
+    color: #102973;
 }

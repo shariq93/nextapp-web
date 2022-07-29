@@ -543,6 +543,10 @@ border-top-right-radius: 100px;
 }
 .full-team-img img{
     width:100%;
+    max-height:400px;
+    border-top-right-radius: 100px;
+    object-fit: cover;
+    object-position: center;
 }
 .next-people{
     width: 100%;
